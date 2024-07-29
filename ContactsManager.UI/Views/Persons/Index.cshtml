@@ -1,0 +1,116 @@
+﻿@model IEnumerable<PersonResponse>
+@{
+    ViewBag.Title = "Persons";
+    ViewBag.CurrentURL = "~/Persons/Index";
+    string searchBy = ViewBag.CurrentSearchBy as string;
+    string searchString = ViewBag.CurrentSearchString as string;
+}
+<form asp-action="Index" asp-controller="Persons" method="get">
+    <div class="flex">
+        <div class="flex-1">
+            <div class="text-grey">
+                <span>Contacts</span>
+                <i class="bi bi-arrow-right-circle"></i>
+                <span class="text-grey">Persons</span>
+            </div>
+        </div>
+        <div class="flex-1 text-right">
+            <a asp-controller="Persons" asp-action="Create" class="button-link button-blue-back">Create Person</a>
+            <a asp-controller="Persons" asp-action="PersonsPdf" class="button-link button-blue-back ml">Download PDF</a>
+            <a asp-controller="Persons" asp-action="PersonsCSV" class="button-link button-blue-back ml">Download CSV</a>
+            <a asp-controller="Persons" asp-action="PersonsExcel" class="button-link button-blue-back ml">Download Excel</a>
+        </div>
+    </div>
+    <div class="table-container">
+        <div class="flex">
+            <div class="flex-1">
+                <h1>Persons</h1>
+            </div>
+            <div class="flex-3 text-right">
+                <label>Search by:</label>
+                <select class="search-dropdown" style="width:200px" name="searchBy" asp-items="@(new SelectList(ViewBag.SearchList, "Key", "Value", searchBy))">
+                    <option value="">Search Option</option>
+                </select>
+                <input type="search" id="search" name="searchString" value="@searchString" class="search-text" placeholder="Search" style="width:200px" />
+                <button class="search-button">Search</button>
+                <a asp-controller="Persons" asp-action="Index" class="button-link button-red-back">Clear</a>
+            </div>
+        </div>
+
+        <table class="table w-100 mt persons">
+            <thead>
+                <tr>
+                    <th>
+                        <a href="/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=@nameof(PersonResponse.PersonName)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.PersonName) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                            Person Name
+                            <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.PersonName) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=@nameof(PersonResponse.Email)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.Email) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                            Email
+                            <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.Email) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=@nameof(PersonResponse.DateOfBirth)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.DateOfBirth) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                            Date Of Birth
+                            <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.DateOfBirth) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=@nameof(PersonResponse.Age)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.Age) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                            Age
+                            <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.Age) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=@nameof(PersonResponse.Gender)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.Gender) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                            Gender
+                            <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.Gender) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=@nameof(PersonResponse.Address)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.Address) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                            Address
+                            <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.Address) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=@nameof(PersonResponse.CountryId)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.CountryId) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                            Country
+                            <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.CountryId) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                        </a>
+                        
+                    </th>
+                    <th>
+                        <a href="/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=@nameof(PersonResponse.ReceiveNewsLetters)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.ReceiveNewsLetters) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                            Receive News Letters
+                            <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.ReceiveNewsLetters) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                        </a>
+                    </th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in Model)
+                {
+                    <tr>
+                        <td style="width:12%">@person.PersonName</td>
+                        <td style="width:15%">@person.Email</td>
+                        <td style="width:14%">@person.DateOfBirth?.ToString("dd MMM yyyy")</td>
+                        <td style="width:6%">@person.Age</td>
+                        <td style="width:9%">@person.Gender</td>
+                        <td style="width:12%">@person.Address</td>
+                        <td style="width:10%">@person.Country</td>
+                        <td style="width:8%">@person.ReceiveNewsLetters</td>
+                        <td style="width:20%">
+                            <a asp-action="Edit" asp-controller="Persons" asp-route-personId="@person.PersonId" class="button-link button-blue-back">Edit</a>
+                            <a asp-action="Delete" asp-controller="Persons" asp-route-personId="@person.PersonId" class="button-link button-red-back">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</form>

@@ -1,0 +1,59 @@
+﻿@model PersonResponse
+@{
+    ViewBag.Title = "Delete Person";
+    ViewBag.CurrentURL = "~/Persons/Delete";
+
+}
+<div class="flex">
+    <div class="flex-1">
+        <div class="text-grey">
+            <span>Contacts</span>
+            <i class="bi bi-arrow-right-circle"></i>
+            <span class="text-grey">Persons</span>
+            <i class="bi bi-arrow-right-circle"></i>
+            <span class="text-grey">Delete</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-container">
+    <a asp-controller="Persons" asp-action="Index" class="link-hover link-back button-">Back to Persons List</a>
+    <h2 class="text-large">Delete Person</h2>
+
+    <form asp-controller="Persons" asp-action="Delete" method="post">
+        @*PersonName*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="PersonName" class="form-label pt">Person Name</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="PersonName" class="form-input" />
+                <span asp-validation-for="PersonName" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Submit*@
+        <div class="form-field flex">
+            <div class="w-25"></div>
+            <div class="flex-1">
+                <button class="button button-red-back">Delete</button>
+                <div asp-validation-summary="All" class="text-red"></div>
+                @if (ViewBag.Errors != null)
+                {
+                    <div class="text-red ml">
+                        <ul>
+                            @foreach (string error in ViewBag.Errors)
+                            {
+                                <li class="ml">@error</li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"></partial>
+}

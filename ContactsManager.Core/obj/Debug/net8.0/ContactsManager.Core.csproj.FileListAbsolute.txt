@@ -1,0 +1,10 @@
+C:\.NET Project\ContactsManager\ContactsManager.Core\bin\Debug\net8.0\ContactsManager.Core.deps.json
+C:\.NET Project\ContactsManager\ContactsManager.Core\bin\Debug\net8.0\ContactsManager.Core.dll
+C:\.NET Project\ContactsManager\ContactsManager.Core\bin\Debug\net8.0\ContactsManager.Core.pdb
+C:\.NET Project\ContactsManager\ContactsManager.Core\obj\Debug\net8.0\ContactsManager.Core.csproj.AssemblyReference.cache
+C:\.NET Project\ContactsManager\ContactsManager.Core\obj\Debug\net8.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\.NET Project\ContactsManager\ContactsManager.Core\obj\Debug\net8.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+C:\.NET Project\ContactsManager\ContactsManager.Core\obj\Debug\net8.0\ContactsManager.Core.dll
+C:\.NET Project\ContactsManager\ContactsManager.Core\obj\Debug\net8.0\refint\ContactsManager.Core.dll
+C:\.NET Project\ContactsManager\ContactsManager.Core\obj\Debug\net8.0\ContactsManager.Core.pdb
+C:\.NET Project\ContactsManager\ContactsManager.Core\obj\Debug\net8.0\ref\ContactsManager.Core.dll

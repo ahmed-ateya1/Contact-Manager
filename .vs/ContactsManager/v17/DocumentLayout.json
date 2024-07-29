@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\.NET Project\\ContactsManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|c:\\.net project\\contactsmanager\\contactsmanager.ui\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|solutionrelative:contactsmanager.ui\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|c:\\.net project\\contactsmanager\\contactsmanager.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|solutionrelative:contactsmanager.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|c:\\.net project\\contactsmanager\\contactsmanager.ui\\startupextensions\\configureservicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|solutionrelative:contactsmanager.ui\\startupextensions\\configureservicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|c:\\.net project\\contactsmanager\\contactsmanager.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|solutionrelative:contactsmanager.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|c:\\.net project\\contactsmanager\\contactsmanager.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53DC8E97-B404-4713-A832-17ECB5921A8D}|ContactsManager.UI\\ContactsManager.UI.csproj|solutionrelative:contactsmanager.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonsController.cs",
+              "DocumentMoniker": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\Controllers\\PersonsController.cs",
+              "RelativeDocumentMoniker": "ContactsManager.UI\\Controllers\\PersonsController.cs",
+              "ToolTip": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\Controllers\\PersonsController.cs",
+              "RelativeToolTip": "ContactsManager.UI\\Controllers\\PersonsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T08:14:53.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ContactsManager.UI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ContactsManager.UI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-29T06:56:22.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\Program.cs",
+              "RelativeDocumentMoniker": "ContactsManager.UI\\Program.cs",
+              "ToolTip": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\Program.cs",
+              "RelativeToolTip": "ContactsManager.UI\\Program.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwBkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T06:55:51.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ContactsManager.UI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ContactsManager.UI\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAkwG0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T06:40:45.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConfigureServicesExtensions.cs",
+              "DocumentMoniker": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\StartupExtensions\\ConfigureServicesExtensions.cs",
+              "RelativeDocumentMoniker": "ContactsManager.UI\\StartupExtensions\\ConfigureServicesExtensions.cs",
+              "ToolTip": "C:\\.NET Project\\ContactsManager\\ContactsManager.UI\\StartupExtensions\\ConfigureServicesExtensions.cs",
+              "RelativeToolTip": "ContactsManager.UI\\StartupExtensions\\ConfigureServicesExtensions.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAQwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T06:33:57.364Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

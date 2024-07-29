@@ -1,0 +1,140 @@
+﻿@model IEnumerable<PersonResponse>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Persons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        th a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            position: relative;
+            padding-right: 20px;
+        }
+
+            th a:hover {
+                color: #007bff;
+            }
+
+            th a i {
+                margin-left: 5px;
+                font-size: 12px;
+            }
+
+            th a .bi {
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+    </style>
+</head>
+<body>
+    <h1>Persons</h1>
+    <table class="table w-100 mt">
+        <thead>
+            <tr>
+                <th>
+                    <a href="/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.PersonName)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.PersonName) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                        Person Name
+                        <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.PersonName) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                    </a>
+                </th>
+                <th>
+                    <a href="/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.Email)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.Email) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                        Email
+                        <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.Email) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                    </a>
+                </th>
+                <th>
+                    <a href="/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.DateOfBirth)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.DateOfBirth) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                        Date Of Birth
+                        <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.DateOfBirth) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                    </a>
+                </th>
+                <th>
+                    <a href="/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.Age)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.Age) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                        Age
+                        <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.Age) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                    </a>
+                </th>
+                <th>
+                    <a href="/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.Gender)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.Gender) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                        Gender
+                        <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.Gender) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                    </a>
+                </th>
+                <th>
+                    <a href="/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.Address)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.Address) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                        Address
+                        <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.Address) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                    </a>
+                </th>
+                <th>Country</th>
+                <th>
+                    <a href="/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.ReceiveNewsLetters)&sortedOption=@(ViewBag.CurrentSortBy == nameof(PersonResponse.ReceiveNewsLetters) && ViewBag.CurrentSortOrder == "ASC" ? "DESC" : "ASC")">
+                        Receive News Letters
+                        <i class="bi bi-arrow-@(ViewBag.CurrentSortBy == nameof(PersonResponse.ReceiveNewsLetters) && ViewBag.CurrentSortOrder == "ASC" ? "up" : "down")"></i>
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in Model)
+            {
+                <tr>
+                    <td>@person.PersonName</td>
+                    <td>@person.Email</td>
+                    <td>@person.DateOfBirth?.ToString("dd MMM yyyy")</td>
+                    <td>@person.Age</td>
+                    <td>@person.Gender</td>
+                    <td>@person.Address</td>
+                    <td>@person.Country</td>
+                    <td>@person.ReceiveNewsLetters</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ContactsManager.UI.props" />
+</Project>

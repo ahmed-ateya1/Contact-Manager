@@ -1,0 +1,15 @@
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\bin\Debug\net8.0\ContactsManager.Infrastructure.deps.json
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\bin\Debug\net8.0\ContactsManager.Infrastructure.runtimeconfig.json
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\bin\Debug\net8.0\ContactsManager.Infrastructure.dll
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\bin\Debug\net8.0\ContactsManager.Infrastructure.pdb
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\bin\Debug\net8.0\ContactsManager.Core.dll
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\bin\Debug\net8.0\ContactsManager.Core.pdb
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\ContactsManager.Infrastructure.csproj.AssemblyReference.cache
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\ContactsManager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\ContactsManager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\Contacts.2BC572B3.Up2Date
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\ContactsManager.Infrastructure.dll
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\refint\ContactsManager.Infrastructure.dll
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\ContactsManager.Infrastructure.pdb
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\ContactsManager.Infrastructure.genruntimeconfig.cache
+C:\.NET Project\ContactsManager\ContactsManager.Infrastructure\obj\Debug\net8.0\ref\ContactsManager.Infrastructure.dll
