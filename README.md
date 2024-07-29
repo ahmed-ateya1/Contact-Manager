@@ -58,7 +58,15 @@ Contacts Manager is a web application built with ASP.NET Core that allows users 
 **Home Page**: The home page of the Contacts Manager web application. It displays a list of contacts with options to add, edit, delete, and search for contacts. The page also provides buttons to export contact data in PDF, CSV, and Excel formats.
 ![HomePage](https://github.com/user-attachments/assets/85b59c42-dbe2-4160-9d87-523bf5ad9bc8)
 
+**Download Pdf Page**: The PDF export feature provides a neatly formatted document of the contact list, including all relevant details for each person.
 ![Screenshot 2024-07-29 121733](https://github.com/user-attachments/assets/e1a50d2c-13e3-4ffc-a540-0b42a09aaf2c)
 
+**Upload  countries**: The page provides downloading an excel file for countries in an easy way for the user.
+![Screenshot 2024-07-29 122807](https://github.com/user-attachments/assets/aaa36328-bbb0-4d21-9e41-40764564a939)
 
+**Login Page**
+![Screenshot 2024-07-29 123051](https://github.com/user-attachments/assets/a221d827-91af-41b6-9a4a-491ea5d2eddc)
+
+**Register Page**
+![Screenshot 2024-07-29 123146](https://github.com/user-attachments/assets/c5d92541-b9cb-46c8-bbf7-3a1c496914f9)
 
