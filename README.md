@@ -57,13 +57,3 @@ Contacts Manager is a web application built with ASP.NET Core that allows users 
 ## Screenshots
 
 ![Main Screen](path/to/screenshot.png)
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
